@@ -1,0 +1,45 @@
+.portfolio {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toolbar {
+  display: flex;
+  flex-flow: row;
+  margin: 1.5rem 0;
+}
+
+.toolbar-item {
+  display: flex;
+  cursor: pointer;
+}
+
+.toolbar-item + .toolbar-item {
+  margin-left: 0.25rem;
+}
+
+.toolbar-item input[type="radio"] {
+  display: none;
+}
+
+.toolbar-item__title {
+  padding: 0.25rem 0.5rem;
+  color: #555555;
+  border: 1px solid #555555;
+}
+
+input[type="radio"]:checked + .toolbar-item__title {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #555555;
+}
+
+.portfolio-projects {
+  column-count: 3;
+}
+
+.portfolio-projects img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
